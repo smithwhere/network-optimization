@@ -20,8 +20,8 @@ if ! command -v dig &> /dev/null; then
 fi
 
 # 定义要测试的 DNS
-targets=("1.1.1.1" "8.8.8.8" "9.9.9.9" "208.67.222.222")
-check_domain="www.google.com"
+targets=("1.1.1.1" "1.0.0.1" "8.8.8.8" "8.8.4.4")
+check_domain="www.gstatic.com"
 
 echo -e "测试目标域名: ${YELLOW}$check_domain${PLAIN}"
 echo -e "------------------------------------------------"
