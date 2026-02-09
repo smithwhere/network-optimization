@@ -2,7 +2,7 @@
 
 # =================配置区域=================
 DNS_SERVERS=("1.1.1.1" "8.8.8.8")
-DOMAINS=("gstatic.com" "cp.cloudflare.com" "youtube.com" "reddit.com" "intel.com")
+DOMAINS=("gstatic.com" "cp.cloudflare.com" "youtube.com" "reddit.com" "intel.com" "store.steampowered.com" "steamcommunity.com")
 COUNT=5      # 测试次数 (为了快速出结果，改为5次)
 INTERVAL=0.5 # 间隔 (秒)
 # =========================================
