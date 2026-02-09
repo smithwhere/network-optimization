@@ -176,9 +176,6 @@ EOF
     add_conf "net.ipv4.tcp_mtu_probing" "1" "开启 MTU 探测 (解决部分网络卡顿)"
     add_conf "net.ipv4.tcp_syncookies" "1" "防 SYN Flood"
 
-    # 8. 开启TFO (TCP Fast Open)
-    add_conf "net.ipv4.tcp_fastopen" "3" "客户端和服务器同时开启"
-    add_conf "net.ipv4.tcp_fastopen_blackhole_timeout_sec" "0" "关闭黑洞检测"
 }
 
 # --- 应用与验证 ---
