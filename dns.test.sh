@@ -190,12 +190,11 @@ confirm_config() {
         echo -e "\n"
         
         echo -e "--------------------------------"
-        read -p "开始进行测试? (y/n/b[回退]): " confirm
+        read -p "开始进行测试? (Y/N): " confirm
         case $confirm in
             [Yy]* ) run_benchmark; exit 0 ;;
-            [Nn]* ) exit 0 ;;
-            [Bb]* ) return 1 ;; # 返回 1 表示回退
-            * ) echo "请输入 y, n 或 b"; sleep 1 ;;
+            [Nn]* ) return 1 ;;
+            * ) echo "请确认"; sleep 1 ;;
         esac
     done
 }
@@ -206,13 +205,13 @@ show_menu() {
     
     while true; do
         clear
-        echo -e "${CYAN}DNS 深度质量分析工具${NC}"
-        echo "=============================="
+        echo -e "${CYAN}DNS 质量分析工具${NC}"
+        echo "=========================="
         
         # --- 第一层：DNS 选择 ---
         echo -e "${GREEN}[1] 配置 DNS 服务器${NC}"
         echo "1. 系统DNS + 脚本内置DNS (自动去重)"
-        echo "2. 仅使用脚本内置DNS"
+        echo "2. 仅使用脚本内置DNS (1.1.1.1,8.8.8.8)"
         echo "3. 自定义 DNS (手动输入)"
         read -p "请选择 (1-3): " dns_choice
 
