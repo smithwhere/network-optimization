@@ -115,7 +115,7 @@ run_benchmark() {
     clear
     echo -e "========================================================================"
     echo -e " 开始测试 (Count: $COUNT | Interval: ${INTERVAL}s)"
-    echo -e " ${CYAN}Jitter (抖动)${NC}: 越低越稳定。${RED}DNS Res${NC}: 解析耗时。${GREEN}TCP Conn${NC}: 建连耗时。"
+    echo -e " ${CYAN}Jitter (抖动)${NC}: 越低越稳定。${CYAN}DNS Res${NC}: 解析耗时。${CYAN}TCP Conn${NC}: 建连耗时。"
     echo -e "========================================================================"
     
     printf "%-20s | %-16s | %-30s | %-30s\n" "Domain" "DNS Server" "DNS Resolution" "TCP Connect"
