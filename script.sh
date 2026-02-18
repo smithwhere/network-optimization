@@ -176,6 +176,9 @@ EOF
     add_conf "net.ipv4.tcp_mtu_probing" "1" "开启 MTU 探测 (解决部分网络卡顿)"
     add_conf "net.ipv4.tcp_syncookies" "1" "防 SYN Flood"
 
+    # --- TCP起速优化 ---
+    add_conf "net.ipv4.tcp_slow_start_after_idle" "0" "关闭空闲后的慢启动重置 (关键)"
+
 }
 
 # --- 应用与验证 ---
