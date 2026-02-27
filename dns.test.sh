@@ -14,7 +14,7 @@ TIMEOUT=2          # 超时时间
 DEFAULT_DNS_SERVERS=("1.1.1.1" "8.8.8.8" "9.9.9.9" "208.67.222.222" "199.85.126.10" "84.200.69.80" "1.1.1.2" "64.6.64.6")
 
 # 内置 域名 列表
-DEFAULT_DOMAINS=("cp.cloudflare.com" "www.gstatic.com" "www.youtube.com" "www.google.com" "store.steampowered.com" "www.netflix.com" "play.max.com" "www.disneyplus.com")
+DEFAULT_DOMAINS=("www.gstatic.com" "www.youtube.com" "www.google.com")
 # ===========================================
 
 # 颜色定义
